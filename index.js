@@ -60,6 +60,12 @@ var StarRatingComponent = function (_Component) {
             onStarClick && onStarClick(i, value, name);
         }
     }, {
+        key: 'componentDidUpdate',
+        value: function componentDidUpdate() {
+
+            this.setState({ value: this.props.value });
+        }
+    }, {
         key: 'renderStars',
         value: function renderStars() {
             var _props2 = this.props;
@@ -68,7 +74,7 @@ var StarRatingComponent = function (_Component) {
             var starColor = _props2.starColor;
             var editing = _props2.editing;
             var renderStarIcon = _props2.renderStarIcon;
-            var value = this.props.value;
+            var value = this.state.value;
 
             var starStyles = {
                 float: 'right',
