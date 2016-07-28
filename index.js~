@@ -61,9 +61,9 @@ var StarRatingComponent = function (_Component) {
         }
     }, {
         key: 'componentWillReceiveProps',
-        value: function componentWillReceiveProps(nextProps) {
+        value: function componentWillReceiveProps() {
 
-            this.setState({ value: nextProps.value });
+            this.setState({ value: this.props.value });
         }
     }, {
         key: 'renderStars',
@@ -162,4 +162,3 @@ StarRatingComponent.defaultProps = {
 };
 exports.default = StarRatingComponent;
 module.exports = exports['default'];
-
