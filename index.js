@@ -60,8 +60,8 @@ var StarRatingComponent = function (_Component) {
             onStarClick && onStarClick(i, value, name);
         }
     }, {
-        key: 'componentDidUpdate',
-        value: function componentDidUpdate() {
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps() {
 
             this.setState({ value: this.props.value });
         }

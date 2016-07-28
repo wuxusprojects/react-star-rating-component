@@ -1,6 +1,6 @@
 {
   "name": "wuxus-star-rating-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React component for star (or any other icon based) ratings",
   "main": "index.js",
   "scripts": {
